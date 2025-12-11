@@ -59,3 +59,7 @@ The project started as a collection of standalone Jupyter Notebooks exported as 
 ## 6. Debugging & Fixes (Post-Deployment)
 *   **Issue**: Broken image paths on GitHub Pages due to subdirectory deployment.
 *   **Fix**: Updated `projects.js`, `Header.jsx`, and `ProjectModal.jsx` to use `import.meta.env.BASE_URL` (which resolves to `/tedahn-aiml-project-notebooks/` in production). This ensures absolute paths correctly point to assets relative to the repo root.
+    
+## 7. Final Polish & Optimization
+*   **Favicons**: Generated a full suite of favicons (16x16, 32x32, 180x180, 192x192, 512x512) from the `brain_icon.png` source and added a `site.webmanifest` for Android support.
+*   **Asset Optimization**: Analyzed and downsized all project thumbnails. Original files were ~5-6MB each; resized them to 800px max dimension, reducing sizes to ~500KB (90% reduction) for significantly faster page loads.
