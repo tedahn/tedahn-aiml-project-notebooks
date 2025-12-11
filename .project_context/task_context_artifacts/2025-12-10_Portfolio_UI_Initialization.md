@@ -55,3 +55,7 @@ The project started as a collection of standalone Jupyter Notebooks exported as 
 *   `.project_context/overview.md`: High-level project summary.
 *   `.github/workflows/deploy.yml`: CI/CD pipeline.
 *   `portfolio-ui/`: Complete source code.
+
+## 6. Debugging & Fixes (Post-Deployment)
+*   **Issue**: Broken image paths on GitHub Pages due to subdirectory deployment.
+*   **Fix**: Updated `projects.js`, `Header.jsx`, and `ProjectModal.jsx` to use `import.meta.env.BASE_URL` (which resolves to `/tedahn-aiml-project-notebooks/` in production). This ensures absolute paths correctly point to assets relative to the repo root.

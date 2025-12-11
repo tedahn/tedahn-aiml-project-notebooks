@@ -18,7 +18,7 @@ const ProjectModal = ({ project, onClose }) => {
                 <div className="flex items-center gap-4">
                     <h2 className="text-xl font-bold text-white max-w-md truncate">{project.title}</h2>
                     <a
-                        href={`/projects/${project.filename}`}
+                        href={`${import.meta.env.BASE_URL}projects/${project.filename}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-white underline transition-colors"
@@ -43,7 +43,7 @@ const ProjectModal = ({ project, onClose }) => {
             {/* Iframe Container */}
             <div className="flex-grow overflow-hidden relative">
                 <iframe
-                    src={`/projects/${project.filename}`}
+                    src={`${import.meta.env.BASE_URL}projects/${project.filename}`}
                     className="w-full h-full border-0 bg-white"
                     title={project.title}
                 />

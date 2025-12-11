@@ -1,3 +1,5 @@
+const BASE = import.meta.env.BASE_URL;
+
 export const projects = [
     {
         id: 1,
@@ -7,8 +9,8 @@ export const projects = [
         complexity: "Beginner",
         complexityColor: "text-green-400",
         filename: "Learner_Notebook_Full_Code.html",
-        image: "/project_thumbnails/FoodHub Data Analysis.png",
-        icon: "/icons/chart_icon.png"
+        image: `${BASE}project_thumbnails/FoodHub Data Analysis.png`,
+        icon: `${BASE}icons/chart_icon.png`
     },
     {
         id: 2,
@@ -18,8 +20,8 @@ export const projects = [
         complexity: "Intermediate",
         complexityColor: "text-yellow-400",
         filename: "Full_Code_SuperKart.html",
-        image: "/project_thumbnails/SuperKart Sales Forecasting.png",
-        icon: "/icons/chart_icon.png"
+        image: `${BASE}project_thumbnails/SuperKart Sales Forecasting.png`,
+        icon: `${BASE}icons/chart_icon.png`
     },
     {
         id: 3,
@@ -29,8 +31,8 @@ export const projects = [
         complexity: "Intermediate",
         complexityColor: "text-yellow-400",
         filename: "EasyVisa_Full_Code_Notebook.html",
-        image: "/project_thumbnails/Visa Approval Prediction.png",
-        icon: "/icons/machine_arm_icon.png"
+        image: `${BASE}project_thumbnails/Visa Approval Prediction.png`,
+        icon: `${BASE}icons/machine_arm_icon.png`
     },
     {
         id: 4,
@@ -40,8 +42,8 @@ export const projects = [
         complexity: "Advanced",
         complexityColor: "text-orange-400",
         filename: "INN_ReneWind_Main_Project_FullCode_Notebook_submitted_final.html",
-        image: "/project_thumbnails/Renewable Energy Maintenance (ReneWind).png",
-        icon: "/icons/brain_icon.png"
+        image: `${BASE}project_thumbnails/Renewable Energy Maintenance (ReneWind).png`,
+        icon: `${BASE}icons/brain_icon.png`
     },
     {
         id: 5,
@@ -51,8 +53,8 @@ export const projects = [
         complexity: "Advanced",
         complexityColor: "text-orange-400",
         filename: "HelmNet_Full_Code.html",
-        image: "/project_thumbnails/Helmet Detection (HelmNet).png",
-        icon: "/icons/brain_icon.png"
+        image: `${BASE}project_thumbnails/Helmet Detection (HelmNet).png`,
+        icon: `${BASE}icons/brain_icon.png`
     },
     {
         id: 6,
@@ -62,7 +64,7 @@ export const projects = [
         complexity: "Expert",
         complexityColor: "text-red-500",
         filename: "nlp_genai_notebook.html",
-        image: "/project_thumbnails/Healthcare QA (GenAI).png",
-        icon: "/icons/brain_icon.png"
+        image: `${BASE}project_thumbnails/Healthcare QA (GenAI).png`,
+        icon: `${BASE}icons/brain_icon.png`
     }
 ];

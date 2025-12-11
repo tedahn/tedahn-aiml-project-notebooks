@@ -5,7 +5,7 @@ const Header = () => {
         <div className="relative overflow-hidden bg-slate-900 py-24 sm:py-32">
             <div className="absolute inset-0">
                 <img
-                    src="/abstract_backgrounds/Tech Grid.png"
+                    src={`${import.meta.env.BASE_URL}abstract_backgrounds/Tech Grid.png`}
                     alt="Background"
                     className="h-full w-full object-cover opacity-20"
                 />
