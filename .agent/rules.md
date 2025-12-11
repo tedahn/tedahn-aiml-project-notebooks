@@ -5,14 +5,15 @@ Future agents MUST treat the `.project_context` and `.workflow_context` director
 
 ### A. Context Awareness
 *   **Start of Session**: Always read `.project_context/overview.md` to understand the project scope, architecture, and business goals.
-*   **Task Definition**: specific tasks or project-level to-dos are found in `.workflow_context/task_definition.md` (or similar).
+*   **Active Mobile Context**: `.workflow_context/` contains temporary, specific task definitions used to drive the current work.
 
-### B. Living Documentation Mandate
-*   **Architecture Changes**: If you modify the tech stack, directory structure, or key deployment logic, you MUST update `.project_context/overview.md` immediately.
-*   **Session Logs**: After completing a significant session or feature implementation, create a detailed log in `.project_context/task_context_artifacts/`.
-    *   **Naming**: `YYYY-MM-DD_FeatureName.md`
-    *   **Content**: "Context & Goal", "Architectural Changes", "Key Decisions", and "Operational Notes".
-    *   **Purpose**: This allows future agents to "replay" the decision-making process.
+### B. Living Documentation Cycle
+1.  **Execution**: Perform tasks based on `.workflow_context`.
+2.  **Documentation**: Upon completion, log full details (changes, decisions, architecture updates) into a new file in `.project_context/task_context_artifacts/`.
+3.  **Cleanup (CRITICAL)**: `.workflow_context` is **short-lived**.
+    *   After the session log is created, you MUST **ask the developer** for permission to delete `.workflow_context`.
+    *   Never delete it without explicit confirmation.
+    *   This ensures the codebase stays clean for the next specific task.
 
 ## 2. Tech Stack Requirements
 *   **Framework**: Use **React** (v18+) with **Vite**.
